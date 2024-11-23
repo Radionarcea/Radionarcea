@@ -116,51 +116,11 @@ By accessing and/or using this code snippet, you agree to AccuWeather’s terms 
           <th height="15" colspan="3" scope="col"><div align="left">RADIO en directo.</div></th>
         </tr>
         <tr>
-          <th width="455" height="242" rowspan="3" align="center" valign="top" scope="col"><script src="http://releases.flowplayer.org/js/flowplayer-3.2.13.min.js"></script>
-<style>
-a.rtmp {
-display:block;
-width:455px;
-height:242px;
-margin:20px 0;
-text-align:center;
-}
-a.rtmp img {
-border:1px;
-margin-top:120px;
-}
-</style>
-</head>
-<body>
-<!-- style those players --><!-- the first player. video is specified in href attribute -->
-<a class="rtmp" href="mp4:bbb-800" style="background-image: url();"><img src="logo.png"></a><!-- the second player. uses the same video here but could be different --><!-- this script block will install Flowplayer inside previous A tag -->
-<script>
-$f("a.rtmp", "http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf", {
-// configure both players to use rtmp plugin
-clip: {
-url: 'livestream',
-provider: 'rtmp',
-live: true,
-autoplay: true
-},
-// here is our rtpm plugin configuration
-plugins: {
-rtmp: {
-// use latest RTMP plugin release
-url: "flowplayer.rtmp-3.2.13.swf",
-/*
-netConnectionUrl defines where the streams are found
-this is what we have in our HDDN account
-*/
-netConnectionUrl: 'rtmp://91.126.223.28:1935/live'
-}
-}
-});
-</script>
+          <th width="455" height="242" rowspan="3" align="center" valign="top" scope="col"><iframe width="455" height="242" src="//www.youtube.com/embed/6QyPbjb_cw8" frameborder="0" allowfullscreen></iframe>
             <span class="Fondo">&nbsp;</span>
             <table width="455" border="0">
               <tr>
-                <th height="21" scope="col"><script language="Javascript" type="text/javascript" src="http://www.marca.com/widgets/launcher.html?c=Gris&w=455&h=570&cid=WID33801&s_kw=futbol" id="wm001001304"></script> &nbsp;</th>
+                <th height="21" scope="col"><script language="Javascript" type="text/javascript" src="//widgets.elpais.com/liga/wlaunch.html?c=azul&w=455&h=555"></script> </th>
               </tr>
             </table></th>
           <th width="241" height="21" scope="col"><audio src="http://91.126.223.28:9830/;" autoplay="" controls> </audio>&nbsp;</th>
