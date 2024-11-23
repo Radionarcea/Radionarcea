@@ -1,0 +1,32 @@
+  Datos de entrada al dominio de Radio Narcea tv    http://www.godaddy.com/
+
+    Usuario:     55502112
+    contraseña:   farinia1A
+       pin:       1124
+
+
+correo    info@radionarceatv.es
+contraseña    cangas2011
+
+Número de Cliente: Nombre de Usuario: Número de Recibo: 
+55502112 55502112 458975806 
+
+
+
+
+
+http://forums.cpanel.net/f39/registrar-el-dominio-con-dns-55994.html
+
+
+Redireccionar al espacio web de narceadigital.com
+
+DNS.   ns1.narcea.es
+ Ip.   91.126.223.7
+DNS.   ns2.narcea.es
+ Ip.   85.152.47.142
+
+Acceso FTP...
+
+servidor 91.126.223.7
+usuario   Radionarceatv
+Contraseña  Radionarceatv2012
