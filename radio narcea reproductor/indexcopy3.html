@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Multiple players on one page : Flowplayer</title>
+
+<link rel="shortcut icon" href="http://flash.flowplayer.org/favicon.ico">
+<!-- standalone page styling. can be removed -->
+<style>
+body{
+width:982px;
+margin:50px auto;
+font-family:sans-serif;
+}
+a:active {
+outline:none;
+}
+:focus { -moz-outline-style:none; }
+.palert {
+padding: 12px;
+color: black;
+background-color: #ededed;
+box-shadow: none;
+}
+</style><!-- flowplayer javascript component -->
+<script src="http://releases.flowplayer.org/js/flowplayer-3.2.13.min.js"></script>
+<style>
+a.rtmp {
+display:block;
+width:640px;
+height:360px;
+margin:25px 0;
+text-align:center;
+}
+a.rtmp img {
+border:0px;
+margin-top:140px;
+}
+</style>
+</head>
+<body>
+<!-- style those players --><!-- the first player. video is specified in href attribute -->
+<a class="rtmp" href="mp4:bbb-800" style="background-image: url();"> <img src="logo.png"></a><!-- the second player. uses the same video here but could be different --><!-- this script block will install Flowplayer inside previous A tag -->
+<script>
+$f("a.rtmp", "http://releases.flowplayer.org/swf/flowplayer-3.2.18.swf", {
+// configure both players to use rtmp plugin
+clip: {
+url: 'livestream',
+provider: 'rtmp',
+live: true,
+autoplay: true
+},
+// here is our rtpm plugin configuration
+plugins: {
+rtmp: {
+// use latest RTMP plugin release
+url: "flowplayer.rtmp-3.2.13.swf",
+/*
+netConnectionUrl defines where the streams are found
+this is what we have in our HDDN account
+*/
+netConnectionUrl: 'rtmp://91.126.223.28:1935/live'
+}
+}
+});
+</script>
+</body></html>
